@@ -1,0 +1,14 @@
+apiVersion: agentspec.orchestrator.dev/v2alpha1
+kind: Environment
+metadata:
+  key: default
+spec:
+  name: Default
+  isDefault: true
+  networkPolicy:
+    egressMode: open
+  secrets:
+    requiredKeys: []
+  toolPolicy:
+    preset: autonomous
+    rules: []

@@ -1,0 +1,11 @@
+apiVersion: agentspec.orchestrator.dev/v2alpha1
+kind: Tool
+metadata:
+  key: find-bugs
+spec:
+  source: local
+  toolId: find_bugs
+  modulePath: tools/find-bugs.tool.ts
+  name: Find Bugs
+  description: Scan source files for common bug patterns like unhandled errors, race conditions, and security issues.
+  riskClass: read

@@ -1,0 +1,10 @@
+apiVersion: agentspec.orchestrator.dev/v2alpha1
+kind: Agent
+metadata:
+  key: executor
+spec:
+  role: executor
+  isDefault: true
+  agentHarness: claude-code
+  model: claude-opus-4-6
+  promptPath: prompts/executor.md

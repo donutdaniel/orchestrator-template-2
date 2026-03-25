@@ -1,0 +1,15 @@
+apiVersion: agentspec.orchestrator.dev/v2alpha1
+kind: Skill
+metadata:
+  key: code-review
+spec:
+  name: Code Review
+  description: Review code changes for correctness, risk, and test coverage gaps.
+  tags:
+    - quality
+    - review
+  contentRoot: .
+  exposurePolicy:
+    scope: workspace
+    allowedRoles:
+      - executor

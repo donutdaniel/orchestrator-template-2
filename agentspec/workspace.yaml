@@ -1,0 +1,9 @@
+apiVersion: agentspec.orchestrator.dev/v2alpha1
+kind: Workspace
+metadata:
+  key: workspace
+spec:
+  git:
+    defaultAutonomyMode: human-review
+  toolPolicy:
+    preset: autonomous

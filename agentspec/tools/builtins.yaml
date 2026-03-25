@@ -1,0 +1,10 @@
+apiVersion: agentspec.orchestrator.dev/v2alpha1
+kind: Tool
+metadata:
+  key: builtins
+spec:
+  source: builtin
+  toolId: "*"
+  name: Built-in Tools
+  description: Allow all built-in runtime tools (task management, codebase, browser, etc.)
+  riskClass: write_irreversible
